@@ -1,0 +1,25 @@
+[project]
+name = "my-notes"
+version = "0.1.0"
+description = "A notes app built in python."
+readme = "README.md"
+authors = [
+    { name = "Aarav Agarwal", email = "279409447+python-neo@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "sqlalchemy>=2.0.54",
+    "textual>=8.2.8",
+]
+
+[project.scripts]
+my-notes = "my_notes:main"
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.16.8",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
