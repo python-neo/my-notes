@@ -1,17 +1,20 @@
 # my-notes
 
-`my-notes` is a small Python notes app. It currently provides a CRUD layer backed
-by SQLite and SQLAlchemy, with a Textual interface planned next.
+`my-notes` is a small Python notes app built around SQLAlchemy and a Textual
+terminal interface. The package now includes both the database-backed CRUD layer
+and a working notebook-style UI for viewing and editing notes.
 
 ## Current status
 
-- SQLAlchemy model and database setup
+- SQLAlchemy-backed SQLite database and schema setup
 - Create, read, update, and delete operations for notes
-- Search notes by title
-- Textual dependency included for the upcoming terminal user interface
+- Title-based note search
+- Textual app with a note index and editor panel
+- Project entry point wired to the UI (`my-notes` -> `my_notes.ui:main`)
 
-The application interface is still in progress. For now, the main usable surface
-is the Python API in `my_notes.notes`.
+The app is now usable as both a Python library and a terminal interface. The
+main data access layer remains in `my_notes.notes`, while the UI lives in
+`my_notes.ui` and `my_notes.index`.
 
 ## Requirements
 

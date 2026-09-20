@@ -1,0 +1,30 @@
+Screen {
+    layout: vertical;
+}
+
+#main {
+    width: 1fr;
+    height: 1fr;
+}
+
+#index {
+    width: 30%;
+    height: 1fr;
+    border: #0176d1
+}
+
+#editor {
+    width: 1fr;
+    height: 1fr;
+    border: #0176d1
+}
+
+#status_bar {
+    width: 1fr;
+    height: 1;
+    align: right middle;
+}
+
+#time {
+    width: auto;
+}

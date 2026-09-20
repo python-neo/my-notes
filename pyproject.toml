@@ -1,6 +1,6 @@
 [project]
 name = "my-notes"
-version = "0.1.0"
+version = "0.2.0"
 description = "A notes app built in python."
 readme = "README.md"
 authors = [
@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-my-notes = "my_notes:main"
+my-notes = "my_notes.ui:main"
 
 [project.optional-dependencies]
 dev = [
